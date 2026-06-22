@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer utilities {
+  .military-3d-text {
+    text-shadow: 0 1px 0 #1e293b, 0 2px 0 #0f172a, 0 3px 0 #020617, 0 4px 6px rgba(0,0,0,0.8), 0 0 20px rgba(234,179,8,0.3);
+  }
+  
+  .glow-gold {
+    box-shadow: 0 0 25px rgba(234, 179, 8, 0.25);
+  }
+
+  .glow-gold-hover:hover {
+    box-shadow: 0 0 35px rgba(234, 179, 8, 0.45);
+    border-color: rgba(234, 179, 8, 0.4);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(234, 179, 8, 0.3);
+    border-radius: 4px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(234, 179, 8, 0.5);
+  }
+}
+
+/* Animations helper */
+@keyframes pulse-border {
+  0%, 100% { border-color: rgba(234,179,8, 0.2); }
+  50% { border-color: rgba(234,179,8, 0.6); }
+}
+
+.animate-pulse-border {
+  animation: pulse-border 3s infinite;
+}

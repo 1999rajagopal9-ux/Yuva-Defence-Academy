@@ -1,0 +1,6 @@
+{
+  "name": "Yuva Defense Academy",
+  "description": "Enterprise-grade AI-powered military EdTech portal for Defence Academy students and parents with cinematic interfaces, virtual voice mentors, live whiteboard classrooms, and super control portals.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
